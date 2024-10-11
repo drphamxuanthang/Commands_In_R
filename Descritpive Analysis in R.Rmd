@@ -1,0 +1,13 @@
+---
+title: "Desciptive Analysis in R"
+output: html_notebook
+---
+
+This Notebook includes the useful commands for descriptive analysis.
+
+We use the cars database
+
+```{r}
+data(mtcars)
+head(mtcars)
+```
