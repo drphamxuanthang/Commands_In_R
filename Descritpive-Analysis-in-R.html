@@ -1656,9 +1656,24 @@ analysis.</p>
 <pre><code>## [1] 20.09062</code></pre>
 <pre class="r"><code>median(df$mpg)</code></pre>
 <pre><code>## [1] 19.2</code></pre>
+<pre class="r"><code>  quantile(df$mpg)</code></pre>
+<pre><code>##     0%    25%    50%    75%   100% 
+## 10.400 15.425 19.200 22.800 33.900</code></pre>
+<pre class="r"><code>  IQR(df$mpg)</code></pre>
+<pre><code>## [1] 7.375</code></pre>
 <pre class="r"><code>library(modeest)
 mfv(df$mpg) # C package: modeest</code></pre>
 <pre><code>## [1] 10.4 15.2 19.2 21.0 21.4 22.8 30.4</code></pre>
+<ol start="2" style="list-style-type: decimal">
+<li>Measure of variability: range, variance and standard deviation</li>
+</ol>
+<pre class="r"><code>range(df$mpg)</code></pre>
+<pre><code>## [1] 10.4 33.9</code></pre>
+<pre class="r"><code>var(df$mpg)</code></pre>
+<pre><code>## [1] 36.3241</code></pre>
+<pre class="r"><code>sd(df$mpg)</code></pre>
+<pre><code>## [1] 6.026948</code></pre>
+<p>B. For dichotomous variable</p>
 
 
 
