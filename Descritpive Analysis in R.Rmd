@@ -24,8 +24,16 @@ A. For continuous variable
 ```{r}
 mean(df$mpg)
 median(df$mpg)
-
+  quantile(df$mpg)
+  IQR(df$mpg)
 library(modeest)
 mfv(df$mpg) # C package: modeest
+```
+
+2. Measure of variability: range, variance and standard deviation
+```{r}
+range(df$mpg)
+var(df$mpg)
+sd(df$mpg)
 ```
 
