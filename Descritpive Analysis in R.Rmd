@@ -5,9 +5,15 @@ output: html_notebook
 
 This Notebook includes the useful commands for descriptive analysis.
 
-We use the cars database fuck
+We use the mtcars database
 
 ```{r}
 data(mtcars)
+```
+
+Summarize the structure and display the head of dataset
+```{r}
+str(mtcars)
 head(mtcars)
 ```
+
