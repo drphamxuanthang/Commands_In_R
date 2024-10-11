@@ -1753,14 +1753,46 @@ display: none;
 
 <!-- rnb-text-begin -->
 <p>This notebook includes command related to importing data</p>
+<div id="identify-the-path-to-file" class="section level1">
+<h1>Identify the path to file</h1>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucGxvdChjYXJzKVxuYGBgIn0= -->
-<pre class="r"><code>plot(cars)</code></pre>
-<!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+</div>
+<div id="open-the-.csv-file-and-save-to-an-object" class="section level1">
+<h1>Open the .CSV file and save to an object</h1>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucmF3ZmlsZSA8LSByZWFkLmNzdihwYXRoX3Jhd2ZpbGUpXG5zdHIocmF3ZmlsZSlcbmBgYCJ9 -->
+<pre class="r"><code>rawfile &lt;- read.csv(path_rawfile)
+str(rawfile)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiJ2RhdGEuZnJhbWUnOlx0NjIgb2JzLiBvZiAgNiB2YXJpYWJsZXM6XG4gJCBpZCAgICAgICAgICA6IGludCAgMSAyIDMgNCA1IDYgNyA4IDkgMTAgLi4uXG4gJCBUaW1lU2luY2VQaEQ6IGludCAgMyA2IDMgOCA5IDYgMTYgMTAgMiA1IC4uLlxuICQgTlB1YnMgICAgICAgOiBpbnQgIDE4IDMgMiAxNyAxMSA2IDM4IDQ4IDkgMjIgLi4uXG4gJCBTZXggICAgICAgICA6IGludCAgMSAxIDEgMCAxIDAgMCAwIDAgMCAuLi5cbiAkIENpdGF0aW9ucyAgIDogaW50ICA1MCAyNiA1MCAzNCA0MSAzNyA0OCA1NiAxOSAyOSAuLi5cbiAkIFNhbGFyeSAgICAgIDogaW50ICA1MTg3NiA1NDUxMSA1MzQyNSA2MTY4MyA1MjkyNiA0NzAzNCA2NjQzMiA2MTEwMCA0MTkzNCA0NzQ1NCAuLi5cbiJ9 -->
+<pre><code>&#39;data.frame&#39;:   62 obs. of  6 variables:
+ $ id          : int  1 2 3 4 5 6 7 8 9 10 ...
+ $ TimeSincePhD: int  3 6 3 8 9 6 16 10 2 5 ...
+ $ NPubs       : int  18 3 2 17 11 6 38 48 9 22 ...
+ $ Sex         : int  1 1 1 0 1 0 0 0 0 0 ...
+ $ Citations   : int  50 26 50 34 41 37 48 56 19 29 ...
+ $ Salary      : int  51876 54511 53425 61683 52926 47034 66432 61100 41934 47454 ...</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuaGVhZChyYXdmaWxlKVxuYGBgIn0= -->
+<pre class="r"><code>head(rawfile)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImRhdGEuZnJhbWUiXSwibnJvdyI6NiwibmNvbCI6Niwic3VtbWFyeSI6W119LCJyZGYiOiJINHNJQUFBQUFBQUFCbTFSdTA3RFFCQmNQOEdHOEVwSGlVUkJZUmRRUUU5RWlTSWNwTFFYNXlBbm5ITmtuMFhvK0pqOEFCVVNCUjlBZ1NqNEQ1RG9BM3YyblRBbml0SHM0MlozeDc3b0RZL0NZUWdBRHJpdUJZNkhJWGlYZzdQb0JNQzFNYkhBaFVEeUhCOTFNZkFSSGNVV3dxN1YrRm9xamI3VDRsVkVZUFIzVkUvTzJFYXMvVE5mQTFxcys0ZUlYY1Y3aUFQRS9tLy9aUUh3L2dIdzlnRHcrUVh3K2d6dytHUVk4emlaMGhLRHJWclVGRzAyVnRINmdFMXB3bmhLKzVPZWxwejNxMUdwRWllaGN4VUdwMHdRd1hLdWUzNUNNbExjR1J1RElyK045Vlo1cW4zZjJQTE4wOUtNbFBvMFhRekhSSkQ0cWtBOVprdERzcExQbWdQQTdxb2YwaFpiaFZIWXJMaThaQnlsazRyZlJNZHlRZXVqZHhUN2YyTzUwdjVXb3p4dGx2SnJ4cW0rUFNNam1xbGtBeDNYaHVOWndialFUckJheGlJWFJMOEwwenpUbGRvYkxIOEFGTmlTZ0tNQ0FBQT0ifQ== -->
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["id"],"name":[1],"type":["int"],"align":["right"]},{"label":["TimeSincePhD"],"name":[2],"type":["int"],"align":["right"]},{"label":["NPubs"],"name":[3],"type":["int"],"align":["right"]},{"label":["Sex"],"name":[4],"type":["int"],"align":["right"]},{"label":["Citations"],"name":[5],"type":["int"],"align":["right"]},{"label":["Salary"],"name":[6],"type":["int"],"align":["right"]}],"data":[{"1":"1","2":"3","3":"18","4":"1","5":"50","6":"51876","_rn_":"1"},{"1":"2","2":"6","3":"3","4":"1","5":"26","6":"54511","_rn_":"2"},{"1":"3","2":"3","3":"2","4":"1","5":"50","6":"53425","_rn_":"3"},{"1":"4","2":"8","3":"17","4":"0","5":"34","6":"61683","_rn_":"4"},{"1":"5","2":"9","3":"11","4":"1","5":"41","6":"52926","_rn_":"5"},{"1":"6","2":"6","3":"6","4":"0","5":"37","6":"47034","_rn_":"6"}],"options":{"columns":{"min":{},"max":[10],"total":[6]},"rows":{"min":[10],"max":[10],"total":[6]},"pages":{}}}
+  </script>
+</div>
+<!-- rnb-frame-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+</div>
 
-<div id="rmd-source-code">LS0tDQp0aXRsZTogIkltcG9ydGluZyBkYXRhIg0Kb3V0cHV0OiBodG1sX25vdGVib29rDQotLS0NCg0KVGhpcyBub3RlYm9vayBpbmNsdWRlcyBjb21tYW5kIHJlbGF0ZWQgdG8gaW1wb3J0aW5nIGRhdGENCg0KYGBge3J9DQpwbG90KGNhcnMpDQpgYGANCg==</div>
+<div id="rmd-source-code">LS0tDQp0aXRsZTogIkltcG9ydGluZyBkYXRhIg0Kb3V0cHV0OiBodG1sX25vdGVib29rDQotLS0NCg0KVGhpcyBub3RlYm9vayBpbmNsdWRlcyBjb21tYW5kIHJlbGF0ZWQgdG8gaW1wb3J0aW5nIGRhdGENCg0KIyBJZGVudGlmeSB0aGUgcGF0aCB0byBmaWxlDQpgYGB7cn0NCnBhdGhfcmF3ZmlsZSA9IGZpbGUuY2hvb3NlKCkNCmBgYA0KDQojIE9wZW4gdGhlIC5DU1YgZmlsZSBhbmQgc2F2ZSB0byBhbiBvYmplY3QNCmBgYHtyfQ0KcmF3ZmlsZSA8LSByZWFkLmNzdihwYXRoX3Jhd2ZpbGUpDQpzdHIocmF3ZmlsZSkNCmhlYWQocmF3ZmlsZSkNCmBgYA0KDQo=</div>
 
 
 

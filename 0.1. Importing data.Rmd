@@ -5,6 +5,15 @@ output: html_notebook
 
 This notebook includes command related to importing data
 
+# Identify the path to file
 ```{r}
-plot(cars)
+path_rawfile = file.choose()
 ```
+
+# Open the .CSV file and save to an object
+```{r}
+rawfile <- read.csv(path_rawfile)
+str(rawfile)
+head(rawfile)
+```
+
