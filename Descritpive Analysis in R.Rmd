@@ -5,7 +5,7 @@ output: html_notebook
 
 This Notebook includes the useful commands for descriptive analysis.
 
-We use the cars database fuck
+We use the cars database fuck fuck
 
 ```{r}
 data(mtcars)
