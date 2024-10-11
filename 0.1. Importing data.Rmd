@@ -1,0 +1,10 @@
+---
+title: "Importing data"
+output: html_notebook
+---
+
+This notebook includes command related to importing data
+
+```{r}
+plot(cars)
+```
