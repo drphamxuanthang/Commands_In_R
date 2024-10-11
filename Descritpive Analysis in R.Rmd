@@ -41,3 +41,4 @@ It's also neccessary to visualize the variable in an effective way (histogram, b
 B. For dichotomous variable
 
 C. Introduction to table1 functions (very nice)
+I love this
