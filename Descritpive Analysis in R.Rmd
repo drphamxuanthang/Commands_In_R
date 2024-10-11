@@ -1,19 +1,31 @@
 ---
 title: "Desciptive Analysis in R"
-output: html_notebook
+output:
+  html_document:
+    df_print: paged
 ---
 
 This Notebook includes the useful commands for descriptive analysis.
 
 We use the mtcars database
-
 ```{r}
-data(mtcars)
+df <- mtcars
 ```
 
 Summarize the structure and display the head of dataset
 ```{r}
-str(mtcars)
-head(mtcars)
+str(df)
+head(df)
+```
+A. For continuous variable
+
+1. Measure of Central Tendency: mean, median and mode
+
+```{r}
+mean(df$mpg)
+median(df$mpg)
+
+library(modeest)
+mfv(df$mpg) # C package: modeest
 ```
 
