@@ -15,6 +15,7 @@ df <- mtcars
 Summarize the structure and display the head of dataset
 ```{r}
 str(df)
+dim(df)
 head(df)
 ```
 A. For continuous variable
